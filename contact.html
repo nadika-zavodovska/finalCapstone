@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta data for the Browser -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- Add favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Add Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Add styles for the website -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+
+  <body id="contact-page">
+    <!-- Header with menu -->
+    <header class="sticky">
+      <nav>
+        <ul class="menu-list">
+          <li><a href="index.html">About Badminton</a></li>
+          <li><a href="rules.html">Rules</a></li>
+          <li><a href="vocabulary.html">Vocabulary</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="saved.html">Saved for Later</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Main header -->
+      <div class="main-header">
+        <h1>Contact</h1>
+      </div>
+
+      <!-- Badminton rules -->
+      <section class="badminton-contact-block">
+        <form id="contact-form" action="mailto:noreply@nadika.name" method="post" enctype="text/plain">
+          <label class="label-newsletter">Name</label>
+          <input type="text" name="user_name" class="email-newsletter">
+          <label class="label-newsletter">Email</label>
+          <input type="email" name="user_email" class="email-newsletter">
+          <label class="label-newsletter">Message</label>
+          <textarea name="message" class="email-newsletter" name="user_text"></textarea>
+          <input type="submit" value="Send email" class="button-newsletter" onclick="sendEmail()">
+      </form>
+      </section>
+      <!-- Form -->
+      <section class="block-newsletter">
+        <div class="form-newsletter">
+          <h4 class="newsletter-title">
+            Would you like to receive our newsletter?
+          </h4>
+          <form action="#" method="post">
+            <label for="email" class="label-newsletter"
+              >Enter your email:</label
+            >
+            <input
+              class="email-newsletter"
+              type="email"
+              id="email"
+              placeholder="Your email"
+              required>
+            <div class="radio-buttons-block">
+              <p>What type of newsletter do you want to receive?</p>
+              <div class="radio-buttons-inputs">
+                <div class="radiobutton-news">
+                  <input
+                    type="radio"
+                    id="news"
+                    name="newsletter"
+                    value="Only news">
+                  <label for="news">Only news</label>
+                </div>
+                <div class="radiobutton-products">
+                  <input
+                    type="radio"
+                    id="products"
+                    name="newsletter"
+                    value="Only products">
+
+                  <label for="products">Only products</label>
+                </div>
+                <div class="radiobutton-news-products">
+                  <input
+                    type="radio"
+                    id="news-products"
+                    name="newsletter"
+                    value="News and products">
+                  <label for="news-products">News and products</label>
+                </div>
+              </div>
+            </div>
+            <button class="button-newsletter" type="submit">Yes</button>
+          </form>
+        </div>
+      </section>
+      <!-- To top button is working with javascript to measure distance when scrolling -->
+      <a id="topbutton" href="#"
+        ><img src="images/to-top-button.png" alt="To top button"><br><span
+          >To top</span
+        ></a
+      >
+    </main>
+    <!-- Footer -->
+    <footer>
+      <h4>References:</h4>
+      <!-- Footer menu -->
+      <ul class="references-menu">
+        <li>
+          <a
+            href="https://badmintonprofessor.com/history-of-badminton/"
+            target="_blank"
+            >Badminton professor</a
+          >
+        </li>
+        <li>
+          <a href="https://badmintonbites.com/" target="_blank"
+            >Badminton bites</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.twinkl.co.uk/teaching-wiki/badminton-drop-shot"
+            target="_blank"
+            >Twinkl</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.englishclub.com/vocabulary/sports-badminton.htm"
+            target="_blank"
+            >English club</a
+          >
+        </li>
+      </ul>
+      <!-- Footer copyright block -->
+      <div class="copyright">
+        <span
+          >©Made by
+          <a
+            href="https://www.instagram.com/nadikalion"
+            class="website-autor"
+            target="_blank"
+            >Nadika</a
+          >
+          with</span
+        >
+      </div>
+    </footer>
+    <!-- Add JavaScript for to Top button-->
+    <script src="scripts/script.js"></script>
+    <script src="scripts/contact.js"></script>
+    <script src="scripts/likessaves.js"></script>
+  </body>
+</html>

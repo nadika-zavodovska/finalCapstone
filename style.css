@@ -1,0 +1,814 @@
+/* Specify body styles */
+body {
+  margin: 0 auto;
+  font-family: "Chivo Mono", monospace;
+  font-size: 1em;
+}
+
+/* Specify highlights for the text selection */
+::selection {
+  background: #fff2a8;
+}
+
+/* Specify styles for general elements */
+h1 {
+  font-size: 1.6em;
+  display: inline-block;
+  border-bottom: 2px solid #82cd47;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.17em;
+  margin: 3vh 0 2vh;
+}
+
+h2,
+h4 {
+  text-align: center;
+}
+
+img {
+  border-radius: 6px;
+}
+
+p,
+div {
+  text-align: justify;
+}
+
+main {
+  margin: 0 auto 6vh;
+}
+
+#history-page main,
+#rules-page main {
+  width: 80%;
+}
+
+/* Specify markers for lists */
+main li::marker {
+  content: url(images/marker-shuttle.png);
+  padding-right: 2vw;
+}
+
+button {
+  font-size: 1.07em;
+}
+
+nav {
+  padding: 2vw 4vw;
+  background-color: #82cd47;
+}
+
+/* Add style to To top button */
+#topbutton {
+  position: fixed;
+  bottom: 2vh;
+  right: 3vw;
+  text-align: center;
+  text-decoration: none;
+  color: #eece17;
+}
+
+/* Specify menu styles */
+
+/* Add sticky style for menu */
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Add styles to hover the menu elements */
+.menu-list li a:hover {
+  transition-property: color;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
+  color: #f0ff42;
+}
+
+.menu-list li {
+  text-transform: uppercase;
+  /* font-size: 0.6em; */
+  margin-right: 1.7vw;
+}
+
+/* Main header */
+.main-header {
+  margin: 2vh auto 0;
+  text-align: center;
+}
+
+/* Main history page  */
+
+.badminton-full-image img {
+  width: 100%;
+  margin: 3vh 0;
+}
+
+.image-house-badminton {
+  width: 100%;
+}
+
+.history-img-block {
+  float: right;
+}
+
+.history-img-block img {
+  width: 33vw;
+}
+
+/* Specify large image block */
+.block-img-history-large {
+  text-align: center;
+  clear: both;
+}
+
+.block-img-history-large figure {
+  margin: 0 1vw 0.5vh 0;
+  float: left;
+}
+
+figcaption {
+  font-weight: 600;
+}
+
+.image-author-quote img {
+  width: 80vw;
+  margin: 3vh 0;
+}
+
+/* Blockquotes */
+.block-quotes {
+  text-align: center;
+}
+
+.block-quotes span {
+  background-color: #f0ff42;
+  font-size: 1.13em;
+}
+
+.block-quotes figcaption {
+  font-style: italic;
+  margin: 0 3vw;
+}
+
+.block-newsletter {
+  text-align: center;
+}
+
+/* Specify form styles */
+.form-newsletter {
+  width: 30%;
+  display: inline-block;
+  padding: 3vh 6vh 6vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  border: 1px solid #85cd54;
+  border-radius: 6px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-newsletter {
+  margin-bottom: 1vh;
+  text-align: center;
+}
+
+.email-newsletter {
+  border: 1px solid #82cd47;
+  text-align: center;
+  border-radius: 2px;
+  width: 34vw;
+  height: 5vh;
+  font-size: 0.8em;
+  padding-left: 5px;
+  margin-bottom: 5px;
+  align-self: center;
+}
+
+/* Remove bold outline */
+button:focus,
+input:focus {
+  outline: 0;
+}
+
+label.label-newsletter {
+  text-align: center;
+}
+
+.radio-buttons-block {
+  margin-bottom: 2vh;
+  text-align: left;
+}
+
+.radio-buttons-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-buttons-inputs label {
+  position: relative;
+  bottom: 3px;
+}
+
+.radio-buttons-block p {
+  text-align: center;
+}
+
+.radiobutton-news,
+.radiobutton-products,
+.radiobutton-news-products {
+  width: 35vw;
+  align-self: center;
+}
+
+input[type="radio"] {
+  accent-color: #82cd47;
+  cursor: pointer;
+  width: 2vw;
+  height: 3vh;
+}
+
+.button-newsletter {
+  align-self: center;
+  width: 35vw;
+  height: 6vh;
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 0 #82cd47;
+  background: linear-gradient(to bottom, #82cd47 5%, #379237 100%);
+  background-color: #379237;
+  text-shadow: 0 1px 0 #379237;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  opacity: 0.8;
+}
+
+.button-newsletter:hover {
+  opacity: 1;
+}
+
+/* Specify style for rules page */
+
+.badminton-facts li,
+.badminton-rules li {
+  padding-left: 0.5vw;
+  margin-bottom: 1.5vh;
+  text-align: justify;
+}
+
+.rules-image img {
+  width: 80vw;
+  margin: 3vh 0;
+}
+
+#rules-page h2 {
+  text-align: center;
+}
+
+/* Specify style for vocabulary page */
+.vocabulary-newsletter {
+  margin: 0 auto;
+}
+
+/* Specify styles for vocabulary table */
+.table-vocabulary {
+  background-image: url(images/shuttle-background.png);
+  background-position: 50% 50%;
+  background-repeat: repeat;
+  background-size: 100%;
+  background-color: #00800042;
+  padding: 6vh 0 8vh;
+  margin-top: 3vh;
+}
+
+.table-vocabulary table {
+  background-color: #ffffffa8;
+  padding: 4vh 4vw;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+thead#table-vocabulary-thead {
+  background-color: #96ca95;
+  height: 6vh;
+  padding-left: 1vw;
+}
+
+#table-vocabulary-tbody tr td {
+  padding-right: 2vw;
+  padding-bottom: 2vh;
+}
+
+#table-vocabulary-tbody tr td:first-child {
+  font-weight: 800;
+}
+
+#page-badmin-vocabulary .comments {
+  margin-top: 30px !important;
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* Specify footer styles */
+footer {
+  background-color: #379237;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vh 0 3vh;
+  color: #fff;
+}
+
+/* Specify footer menu */
+
+.references-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.website-autor {
+  text-decoration: none;
+  color: #fff;
+}
+
+.copyright span:after {
+  content: "🧡";
+  font-size: 1.3em;
+  color: #cd0707;
+}
+
+footer li::marker {
+  content: "🏸 ";
+  font-size: 1.2em;
+}
+
+.block-newsletter {
+  background: #00800042;
+}
+
+.form-newsletter {
+  background-color: #ffffff;
+}
+
+#contact-page form {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 60%;
+  margin: 0 auto 0 auto;
+}
+
+.comments form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.disabled {
+  cursor: not-allowed !important;
+  background: #cccccc !important;
+  ;
+  color: #aaaaaa !important;
+  ;
+  opacity: 1 !important;
+
+}
+
+.disabled:before {
+  content: "♥";
+}
+
+[disable=true] {
+  touch-action: none;
+  cursor: not-allowed !important;
+  background: #cccccc !important;
+  color: #aaaaaa !important;
+  opacity: 1 !important;
+}
+
+.comment-username {
+  font-weight: bold;
+}
+
+.comment-date {
+  color: #aaaaaa;
+}
+
+.comment {
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.comments {
+  border: 1px solid #cccccc;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.comment .button-newsletter {
+  font-size: 1em;
+  width: 35vw;
+}
+
+textarea#user-comment {
+  padding: 2vh 0 0 0;
+  height: 5vh;
+  font-size: 14px;
+}
+
+.likesavebtn {
+  margin: 20px 10px;
+}
+
+.btnLike {
+  background-color: #82cd47;
+  width: 100px;
+  border: none;
+  padding: 10px 0;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.btnLike:hover {
+  background-color: #9de06b;
+}
+
+.save-item {
+  background-color: #ffec1e;
+  width: 100px;
+  border: none;
+  padding: 10px 0;
+  color: #000;
+  cursor: pointer;
+}
+
+.save-item:hover {
+  background-color: #fbe012;
+}
+
+.table-vocabulary .btnLike {
+  margin-left: 10vw;
+}
+
+#saved .likesavebtn {
+  display: none;
+}
+
+#saved img {
+  width: 100%;
+}
+
+/* Media queries */
+
+/* Styles for min-width: 1920px */
+@media only screen and (min-width: 1920px) {
+  body {
+    font-size: 1.3em;
+  }
+
+  /* Form styles */
+
+  .form-newsletter {
+    width: 40%;
+  }
+
+  #page-badmin-vocabulary .form-newsletter {
+    width: 30%;
+  }
+
+  input[type="radio"] {
+    width: 2vw;
+    height: 2vh;
+  }
+}
+
+/* min-width: 1366px styles*/
+@media only screen and (min-width: 1366px) {
+  .button-newsletter {
+    width: 16vw;
+    height: 5vh;
+    font-size: 1.1em;
+  }
+
+  .email-newsletter {
+    height: 4vh;
+    width: 15vw;
+  }
+
+  .radiobutton-news,
+  .radiobutton-news-products,
+  .radiobutton-products {
+    width: 17vw;
+  }
+}
+
+/* min-width: 1366px and max-width: 1920px styles*/
+@media only screen and (min-width: 1366px) and (max-width: 1920px) {
+
+  /* General styles for elements */
+  body {
+    font-size: 1.1em;
+  }
+}
+
+/* min-width: 1200px and max-width: 1366px styles */
+@media only screen and (min-width: 1200px) and (max-width: 1366px) {
+
+  /* General styles for elements */
+  body {
+    font-size: 0.95em;
+  }
+
+  /* Form styles */
+  .radiobutton-news,
+  .radiobutton-news-products,
+  .radiobutton-products {
+    width: 18vw;
+  }
+
+  .form-newsletter {
+    width: 50%;
+  }
+
+  #page-badmin-vocabulary .form-newsletter {
+    width: 40%;
+  }
+}
+
+/* min-width: 992px and max-width: 1200px styles*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+  /* General styles for elements */
+  body {
+    font-size: 1.06em;
+  }
+
+  main {
+    margin-bottom: 9vh;
+  }
+
+  /* Form styles */
+  .form-newsletter {
+    width: 60%;
+  }
+
+  #page-badmin-vocabulary .form-newsletter {
+    width: 50%;
+  }
+
+  .radiobutton-news,
+  .radiobutton-news-products,
+  .radiobutton-products {
+    width: 26vw;
+  }
+
+  .email-newsletter {
+    width: 22vw;
+    height: 6vh;
+  }
+
+  .button-newsletter {
+    width: 25vw;
+    height: 7vh;
+  }
+
+  /* Vocabulary page styles */
+  thead#table-vocabulary-thead {
+    height: 4vh;
+  }
+}
+
+/* min-width: 800px and max-width: 992px styles*/
+@media only screen and (min-width: 800px) and (max-width: 992px) {
+
+  /* General styles for elements */
+  body {
+    font-size: 1.05em;
+  }
+
+  /* Vocabulary page styles */
+  thead#table-vocabulary-thead {
+    height: 3vh;
+  }
+
+  /* Form styles */
+  .form-newsletter {
+    width: 65%;
+  }
+
+  #page-badmin-vocabulary .form-newsletter {
+    width: 55%;
+  }
+
+  .email-newsletter {
+    width: 50vw;
+    height: 9vh;
+  }
+
+  .button-newsletter {
+    width: 50vw;
+    height: 10vh;
+  }
+
+  .radiobutton-news,
+  .radiobutton-news-products,
+  .radiobutton-products {
+    width: 37vw;
+  }
+}
+
+/* min-width: 600px and max-width: 800px styles*/
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+
+  /* General styles for elements */
+  body {
+    font-size: 1.05em;
+  }
+
+  /* Form styles */
+  .form-newsletter {
+    width: 80%;
+  }
+
+  .email-newsletter {
+    height: 8vh;
+  }
+
+  .email-newsletter {
+    width: 30vw;
+    height: 4vh;
+  }
+
+  .radiobutton-news,
+  .radiobutton-news-products,
+  .radiobutton-products {
+    width: 35vw;
+  }
+
+  .button-newsletter {
+    width: 30vw;
+    height: 5vh;
+  }
+
+  input[type="radio"] {
+    width: 3vw;
+    height: 2vh;
+  }
+}
+
+/* max-width: 800px styles*/
+@media only screen and (max-width: 800px) {
+
+  /* Form styles */
+  #history-page .form-newsletter,
+  #rules-page .form-newsletter {
+    width: 80%;
+  }
+
+  #page-badmin-vocabulary .form-newsletter {
+    width: 70%;
+  }
+
+  /* Rules page styles*/
+  ul.badminton-rules {
+    padding: 0;
+  }
+}
+
+/* max-width: 600px styles */
+@media only screen and (max-width: 600px) {
+
+  /* General elements styles*/
+  body {
+    font-size: 0.9em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+  main {
+    width: 75%;
+  }
+
+  nav {
+    padding: 4vw 4vw;
+  }
+
+  main ul {
+    padding: 0 0 0 7vw;
+  }
+
+  /* Styles for main menu */
+  .menu-list li {
+    font-size: 1em;
+  }
+
+  /* Form styles */
+
+  .form-newsletter {
+    width: 90%;
+  }
+
+  .email-newsletter {
+    width: 35vw;
+    height: 6vh;
+  }
+
+  .radiobutton-news,
+  .radiobutton-news-products,
+  .radiobutton-products {
+    width: 50vw;
+  }
+
+  .button-newsletter {
+    width: 35vw;
+    height: 7vh;
+  }
+
+  .form-newsletter {
+    padding: 1vh 2vh 3vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+  }
+
+  input[type="radio"] {
+    width: 7vw;
+  }
+
+  /* To top button styles*/
+  #topbutton {
+    right: 8vw;
+    right: 7vw;
+    bottom: 7vh;
+  }
+
+  /* Main History page styles*/
+  .block-img-history-large figure {
+    float: none;
+  }
+
+  .history-img-block img {
+    width: 100%;
+    float: none;
+  }
+
+  #history-page main {
+    margin-bottom: 4vh;
+  }
+
+  /* blockquotes styles */
+  .block-quotes {
+    margin: 0;
+  }
+
+  /* Vocabulary page styles*/
+  #page-badmin-vocabulary main {
+    width: 100%;
+  }
+
+  thead#table-vocabulary-thead {
+    height: 3.5vh;
+  }
+}
+
+/*  max-width: 400px styles*/
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 0.7em;
+  }
+
+  #history-page main {
+    width: 90%;
+  }
+}

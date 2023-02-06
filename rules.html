@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta data for the Browser -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badminton Rules</title>
+    <!-- Add favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Add Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Add styles for the website -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+
+  <body id="rules-page">
+    <!-- Header with menu -->
+    <header class="sticky">
+      <nav>
+        <ul class="menu-list">
+          <li><a href="index.html">About Badminton</a></li>
+          <li><a href="rules.html">Rules</a></li>
+          <li><a href="vocabulary.html">Vocabulary</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="saved.html">Saved for Later</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Main header -->
+      <div class="main-header">
+        <h1>Badminton rules</h1>
+      </div>
+
+      <!-- Badminton rules -->
+      <section class="badminton-rules-block">
+        <div data-content="article" data-name="badminton" data-id="12">
+        <ul class="badminton-rules">
+          <li>
+            A game can take place with either two (singles) or four (doubles)
+            players.
+          </li>
+          <li>
+            An official match has to be played indoors on the proper court
+            dimensions. The dimensions are 6.1m by 13.4m, The net is situated
+            through the middle of the court and is set at 1.55m.
+          </li>
+          <li>
+            To score a point the shuttlecock must hit within the parameters of
+            the opponents court.
+          </li>
+          <li>
+            If the shuttlecock hits the net or lands out then a point is awarded
+            to your opponent.
+          </li>
+          <li>
+            Players must serve diagonally across the net to their opponent. As
+            points are won then serving stations move from one side to the
+            other. There are no second serves so if your first serve goes out
+            then your opponent wins the point.
+          </li>
+          <li>
+            A serve must be hit underarm and below the servers waist. No overarm
+            serves are allowed.
+          </li>
+          <li>
+            Each game will start with a toss to determine which player will
+            serve first and which side of the court the opponent would like to
+            start from.
+          </li>
+          <li>
+            Once the shuttlecock is ‘live’ then a player may move around the
+            court as they wish. They are permitted to hit the shuttlecock from
+            out of the playing area.
+          </li>
+          <li>
+            If a player touches the net with any part of their body or racket
+            then it is deemed a fault and their opponent receives the point.
+          </li>
+          <li>
+            A fault is also called if a player deliberately distracts their
+            opponent, the shuttlecock is caught in the racket then flung, the
+            shuttlecock is hit twice or if the player continues to infract with
+            the laws of badminton.
+          </li>
+          <li>
+            Each game is umpired by a referee on a high chair who overlooks the
+            game. There are also line judges who monitor if the shuttlecock
+            lands in or not. The referee has overriding calls on infringements
+            and faults.
+          </li>
+          <li>
+            Let may be called by the referee if an unforeseen or accidental
+            circumstance arose. These may include the shuttlecock getting stuck
+            in the bet, server serving out of turn, one player was not ready or
+            a decision which is too close to call.
+          </li>
+          <li>
+            The game has only two rest periods coming the form of a 90 second
+            rest after the first game and a 5 minute rest period after the
+            second game.
+          </li>
+          <li>
+            If the laws are continuously broken by a player then the referee
+            holds the power to dock that player of points with persisting fouls
+            receiving a forfeit of the set or even the match.
+          </li>
+        </ul>
+        <div class="likesavebtn">
+          <button data-action="like" id="btnLike13" class="btnLike">Like</button>
+          <button data-action="save" class="save-item" onclick="savePage()">Save</button>
+        </div>
+      </div>
+        <!-- Image after text  -->
+        <div class="rules-image" data-content="image" data-id="13">
+          <img
+            src="images/badminton-racket.jpg"
+            alt="Badminton racket and shuttlecock.">
+
+        <div class="likesavebtn">
+          <button data-action="like" id="btnLike14" class="btnLike">Like</button>
+          <button data-action="save" class="save-item" onclick="savePage()">Save</button>
+        </div>
+      </div>
+
+      </section>
+      <!-- Form -->
+      <section class="block-newsletter">
+        <div class="form-newsletter">
+          <h4 class="newsletter-title">
+            Would you like to receive our newsletter?
+          </h4>
+          <form action="#" method="post">
+            <label for="email" class="label-newsletter"
+              >Enter your email:</label
+            >
+            <input
+              class="email-newsletter"
+              type="email"
+              id="email"
+              placeholder="Your email"
+              required>
+            <div class="radio-buttons-block">
+              <p>What type of newsletter do you want to receive?</p>
+              <div class="radio-buttons-inputs">
+                <div class="radiobutton-news">
+                  <input
+                    type="radio"
+                    id="news"
+                    name="newsletter"
+                    value="Only news">
+                  <label for="news">Only news</label>
+                </div>
+                <div class="radiobutton-products">
+                  <input
+                    type="radio"
+                    id="products"
+                    name="newsletter"
+                    value="Only products">
+
+                  <label for="products">Only products</label>
+                </div>
+                <div class="radiobutton-news-products">
+                  <input
+                    type="radio"
+                    id="news-products"
+                    name="newsletter"
+                    value="News and products">
+                  <label for="news-products">News and products</label>
+                </div>
+              </div>
+            </div>
+            <button class="button-newsletter" type="submit">Yes</button>
+          </form>
+        </div>
+      </section>
+      <section class="comments">
+        <h2>Leave a comment</h2>
+        <form>
+          <label class="label-newsletter">Comment</label>
+           <textarea id="user-comment" class="email-newsletter" placeholder="Add your comment" value=" "></textarea>
+           <label class="label-newsletter">Username</label>
+           <input type="text" id="user-name" class="email-newsletter" placeholder="Add your username">
+            <input id="" type="submit" value="Comment" class="button-newsletter" onclick="addComment()">
+        </form>
+          <div id="comment-feed">
+          </div>
+      </div>
+    </section>
+      <!-- To top button is working with javascript to measure distance when scrolling -->
+      <a id="topbutton" href="#"
+        ><img src="images/to-top-button.png" alt="To top button"><br><span
+          >To top</span
+        ></a
+      >
+    </main>
+    <!-- Footer -->
+    <footer>
+      <h4>References:</h4>
+      <!-- Footer menu -->
+      <ul class="references-menu">
+        <li>
+          <a
+            href="https://badmintonprofessor.com/history-of-badminton/"
+            target="_blank"
+            >Badminton professor</a
+          >
+        </li>
+        <li>
+          <a href="https://badmintonbites.com/" target="_blank"
+            >Badminton bites</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.twinkl.co.uk/teaching-wiki/badminton-drop-shot"
+            target="_blank"
+            >Twinkl</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.englishclub.com/vocabulary/sports-badminton.htm"
+            target="_blank"
+            >English club</a
+          >
+        </li>
+      </ul>
+      <!-- Footer copyright block -->
+      <div class="copyright">
+        <span
+          >©Made by
+          <a
+            href="https://www.instagram.com/nadikalion"
+            class="website-autor"
+            target="_blank"
+            >Nadika</a
+          >
+          with</span
+        >
+      </div>
+    </footer>
+    <!-- Add JavaScript for to Top button-->
+    <script src="scripts/script.js"></script>
+    <script src="scripts/comments.js"></script>
+    <script src="scripts/likessaves.js"></script>
+  </body>
+</html>
