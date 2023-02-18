@@ -25,7 +25,7 @@
   * to-top-button.png
  * Favicon icon file favicon.ico
 
-## Instalation
+## Installation
 For instalation you need to download the repository and open index.html file in the browser.
 
 ## Usage
